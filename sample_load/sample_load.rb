@@ -1,0 +1,2 @@
+class SampleLoad
+end

@@ -1,0 +1,4 @@
+enable
+# disalbe
+setup_frequency 20
+setup_tweets %w(tweet1 tweet2 tweet3)
