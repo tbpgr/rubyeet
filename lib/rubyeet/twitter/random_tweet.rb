@@ -2,7 +2,7 @@
 
 module Rubyeet::Twitter
   class RandomTweet
-    DEFAULT_TWEETS = ["hello", "oh", "(^_^)"]
+    DEFAULT_TWEETS = %w(hello oh (^_^))
     DEFAULT_ENABLED = false
     DEFAULT_FREQUENCY = 10
     RANDOMTWEET_PATH = './config/Randomtweet'
@@ -50,7 +50,7 @@ module Rubyeet::Twitter
     end
 
     def tweet
-      @tweets.sample[0..99]
+      @tweets.sample[0..99][0..140]
     end
   end
 end

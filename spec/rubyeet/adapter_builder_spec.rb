@@ -9,7 +9,7 @@ describe Rubyeet::AdapterBuilder do
         case_no: 1,
         case_title: "valid case",
         klasses: [Fixnum, String],
-        expected: [Fixnum, String]
+        expected: [Rubyeet::Adapters::Shell, Fixnum, String]
       }
     ]
 
