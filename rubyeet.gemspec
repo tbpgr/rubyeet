@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rubyeet::VERSION
   spec.authors       = ["tbpgr"]
   spec.email         = ["tbpgr@tbpgr.jp"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Write a short summary. Required.}
+  spec.description   = %q{Write a longer description. Optional.}
   spec.homepage      = "https://github.com/tbpgr/rubyeet"
   spec.license       = "MIT"
 
@@ -21,6 +21,8 @@ Gem::Specification.new do |spec|
   spec.add_dependency "mem"
   spec.add_dependency "thor"
   spec.add_dependency "bundler"
+  spec.add_dependency "dotenv"
+  spec.add_dependency "rb-readline"
 
   spec.add_development_dependency "pry"
   spec.add_development_dependency "rspec", "2.14.1"
