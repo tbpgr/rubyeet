@@ -1,7 +1,7 @@
 # encoding: utf-8
 
 module Rubyeet::Brains
-  class Memory
+  class Memory < Base
     def data
       @data ||= {}
     end

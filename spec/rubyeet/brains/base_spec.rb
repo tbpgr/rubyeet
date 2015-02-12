@@ -42,7 +42,7 @@ describe Rubyeet::Brains::Base do
           actual = Rubyeet::Brains::Base.brain_classes
 
           # -- then --
-          expect(actual).to eq([Rubyeet::Brains::SampleChild1, Rubyeet::Brains::SampleChild2])
+          expect(actual).to eq([Rubyeet::Brains::Memory, Rubyeet::Brains::SampleChild1, Rubyeet::Brains::SampleChild2])
         ensure
           case_after c
         end

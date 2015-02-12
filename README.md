@@ -2,7 +2,7 @@
 
 Work In Progress
 
-TODO: Write a gem description
+Write a gem description
 
 ## Installation
 

@@ -53,8 +53,16 @@ module Rubyeet
       end
 
       def random_tweet(body)
-        random = Rubyeet::Twitter::RandomTweet.new
-        Rubyeet.logger.info(random.tweet) if random.tweet_this_time?
+        if random.tweet_this_time?
+          Rubyeet.logger.info("@@@true") 
+          Rubyeet.logger.info(random.tweet) 
+        else
+          Rubyeet.logger.info("@@@false") 
+        end
+      end
+
+      def random
+        @random ||= Rubyeet::Twitter::RandomTweet.new
       end
 
       def stopped?

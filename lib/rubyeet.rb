@@ -1,7 +1,9 @@
+require "active_support/core_ext/module/delegation"
 require "rubyeet/version"
 require "dotenv"
 require 'bundler'
 require 'mem'
+require "rubyeet/cli"
 require "rubyeet/message"
 require "rubyeet/logger"
 require "rubyeet/bot"

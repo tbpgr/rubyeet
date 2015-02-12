@@ -115,7 +115,7 @@ describe Rubyeet::Adapters::Shell do
           rubyeet_adapters_shell = Rubyeet::Adapters::Shell.new
           Rubyeet::Twitter::RandomTweet.any_instance.stub(:tweet_this_time?)
                                        .and_return(true)
-          Rubyeet.logger.should_receive(:info).with(anything())
+          Rubyeet.logger.should_receive(:info).with(anything()).twice
 
           # -- when & then --
           rubyeet_adapters_shell.send(:random_tweet, c[:input])

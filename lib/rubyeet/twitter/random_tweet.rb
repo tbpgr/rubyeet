@@ -11,7 +11,7 @@ module Rubyeet::Twitter
     def initialize
       @tweets = DEFAULT_TWEETS
       @enabled = DEFAULT_ENABLED
-      @frequency = DEFAULT_TWEETS
+      @frequency = DEFAULT_FREQUENCY
       return unless File.exist?(RANDOMTWEET_PATH)
       random_tweet_settings = File.read(RANDOMTWEET_PATH)
       instance_eval random_tweet_settings
@@ -46,7 +46,7 @@ module Rubyeet::Twitter
     end
 
     def tweet_this_time?
-      rand(100) <= frequency
+      frequency >= rand(100)
     end
 
     def tweet
